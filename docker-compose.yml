@@ -1,0 +1,20 @@
+version: "3"
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - //urbox/urbox-lib:/home/urbox
+        container_name: urbox-lib
+        restart: unless-stopped
+        tty: true
+        working_dir: /home/urbox
+        networks:
+            - urbox-networks
+        ports:
+            - "5000:5000"
+
+networks:
+    urbox-networks:
+        driver: bridge
