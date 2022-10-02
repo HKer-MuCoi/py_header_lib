@@ -5,7 +5,7 @@ from pip._internal.req import parse_requirements
 from setuptools import setup
 
 # TODO: Update version whenever changes
-VERSION = '0.1.3.10'
+VERSION = '0.0.1.2'
 
 def get_install_requirements():
     install_reqs = parse_requirements('requirements.txt', session='hack')
@@ -13,7 +13,7 @@ def get_install_requirements():
 
 setup(
     # TODO: Change your library name and additional information down here
-    name='urbox-lib',
+    name='py-header-lib',
     packages=[
         'tuan_lib',
         'tuan_lib.database',

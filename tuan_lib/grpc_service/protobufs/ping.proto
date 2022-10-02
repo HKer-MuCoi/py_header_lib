@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+// The ping service definition.
+service APIPing {
+    // Sends a ping service
+    rpc Ping (PingRequest) returns (PingReply);
+}
+
+
+// The request message containing the ping.
+message PingRequest {
+    string request = 1;
+}
+
+// The response message containing the ping.
+message PingReply {
+    string message = 1;
+}
