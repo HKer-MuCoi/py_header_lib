@@ -5,7 +5,7 @@ from pip._internal.req import parse_requirements
 from setuptools import setup
 
 # TODO: Update version whenever changes
-VERSION = '0.0.1.4'
+VERSION = '0.0.1.5'
 
 
 def get_install_requirements():
@@ -18,11 +18,6 @@ setup(
     name='py_header_lib',
     packages=[
         'py_header_lib',
-        'py_header_lib.database',
-        'py_header_lib.database.mysql',
-        'py_header_lib.http',
-        'py_header_lib.errors',
-        'py_header_lib.protocols',
         'py_header_lib.securities',
         'py_header_lib.grpc_services',
         'py_header_lib.grpc_services.common',
@@ -38,18 +33,11 @@ setup(
         'urllib3>=1.15',
         'environs>=4.2.0',
         'python-json-logger>=0.1.11',
-        'Flask>=1.1.2',
         'pytest',
         'loguru>=0.5.3',
-        'requests>=2.25.1',
         'pytz>=2021.1',
         'pycryptodome>=3.10.1',
         'pyopenssl>=19.1.0',
-        'pymysql>=1.0.2',
-        'sqlalchemy>=1.4.17',
-        'sqlalchemy-pagination>=0.0.2',
-        'sqlalchemy-utils>=0.37.5',
-        'paginator>=0.5.1',
         'inflection>=0.5.1',
         'arrow>=1.1.0',
     ],
