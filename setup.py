@@ -5,7 +5,7 @@ from pip._internal.req import parse_requirements
 from setuptools import setup
 
 # TODO: Update version whenever changes
-VERSION = '0.0.1.3'
+VERSION = '0.0.1.4'
 
 
 def get_install_requirements():
@@ -23,7 +23,7 @@ setup(
         'py_header_lib.http',
         'py_header_lib.errors',
         'py_header_lib.protocols',
-        'py_header_lib.securities'
+        'py_header_lib.securities',
         'py_header_lib.grpc_services',
         'py_header_lib.grpc_services.common',
         'py_header_lib.grpc_services.common.proto',
