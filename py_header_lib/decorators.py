@@ -6,7 +6,7 @@ from functools import wraps
 
 from loguru import logger
 
-from tuan_lib.errors.exception import BadRequest
+from py_header_lib.errors.exception import BadRequest
 from jsonschema import FormatChecker, validate
 from jsonschema.exceptions import ValidationError
 

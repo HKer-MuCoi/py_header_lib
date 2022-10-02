@@ -5,8 +5,8 @@ services:
             context: .
             dockerfile: Dockerfile
         volumes:
-            - //urbox/urbox-lib:/home/urbox
-        container_name: urbox-lib
+            - //urbox/py_header_lib:/home/urbox
+        container_name: py_header_lib
         restart: unless-stopped
         tty: true
         working_dir: /home/urbox

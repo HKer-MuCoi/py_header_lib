@@ -7,9 +7,9 @@ import uuid
 import requests
 from loguru import logger
 
-from tuan_lib.errors.const import HTTPStatusCode
-from tuan_lib.errors.exception import Forbidden, RequestTimeOut, ExceptionFailed
-from tuan_lib.http import FlaskRequestId
+from py_header_lib.errors.const import HTTPStatusCode
+from py_header_lib.errors.exception import Forbidden, RequestTimeOut, ExceptionFailed
+from py_header_lib.http import FlaskRequestId
 
 
 class HttpRequest:

@@ -5,23 +5,28 @@ from pip._internal.req import parse_requirements
 from setuptools import setup
 
 # TODO: Update version whenever changes
-VERSION = '0.0.1.2'
+VERSION = '0.0.1.3'
+
 
 def get_install_requirements():
     install_reqs = parse_requirements('requirements.txt', session='hack')
     return install_reqs
 
+
 setup(
     # TODO: Change your library name and additional information down here
-    name='py-header-lib',
+    name='py_header_lib',
     packages=[
-        'tuan_lib',
-        'tuan_lib.database',
-        'tuan_lib.database.mysql',
-        'tuan_lib.http',
-        'tuan_lib.errors',
-        'tuan_lib.protocols',
-        'tuan_lib.securities'
+        'py_header_lib',
+        'py_header_lib.database',
+        'py_header_lib.database.mysql',
+        'py_header_lib.http',
+        'py_header_lib.errors',
+        'py_header_lib.protocols',
+        'py_header_lib.securities'
+        'py_header_lib.grpc_services',
+        'py_header_lib.grpc_services.common',
+        'py_header_lib.grpc_services.common.proto',
     ],
     url='',
     download_url='',
@@ -52,7 +57,7 @@ setup(
 
     # TODO (Optional): Set your entry-points (CLI apps to register) here
     entry_points={
-        'console_scripts': ['urbox-lib=tuan_lib:env'],
+        'console_scripts': ['py_header_lib=py_header_lib:env'],
     },
 
     # TODO: Choose your classifiers carefully

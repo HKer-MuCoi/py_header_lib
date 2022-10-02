@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from tuan_lib.protocols.http_request import HttpRequest
+from py_header_lib.protocols.http_request import HttpRequest
 
 
 class ServiceHttpConfig:

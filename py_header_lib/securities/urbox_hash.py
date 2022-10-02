@@ -16,7 +16,7 @@ from Crypto.Util.Padding import pad, unpad
 
 import OpenSSL
 
-from tuan_lib.securities.config import URBOX_SECRET
+from py_header_lib.securities.config import URBOX_SECRET
 
 
 class UrboxHash(object):
