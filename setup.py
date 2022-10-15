@@ -18,10 +18,10 @@ setup(
     name='py_header_lib',
     packages=[
         'py_header_lib',
-        'py_header_lib.securities',
         'py_header_lib.grpc_services',
         'py_header_lib.grpc_services.common',
         'py_header_lib.grpc_services.common.proto',
+        'py_header_lib.grpc_services.common.protobufs',
     ],
     url='',
     download_url='',

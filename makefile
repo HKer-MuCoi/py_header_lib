@@ -21,3 +21,6 @@ lint:
 
 cov:
 	pipenv run codecov
+
+proto:
+	python -m grpc_tools.protoc -I=./py_header_lib/grpc_services/common/protobufs/ --python_out=./py_header_lib/grpc_services/common/proto --grpc_python_out=./py_header_lib/grpc_services/common/proto ./py_header_lib/grpc_services/common/protobufs/*.proto
